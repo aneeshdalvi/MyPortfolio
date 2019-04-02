@@ -1,172 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By Aneesh Dalvi for personal purpose -->
-  <title>My Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<title>Aneesh Dalvi | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="imgs/IMG_0460.JPG" style="width:45%;" class="w3-round"><br><br>
 
+    <h5 class="w3-text-grey"><b>Aneesh Kiran Dalvi</b></h5>
 
- <style type="text/css" href= "css/main.css" ></style>
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Important Documents</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Certificates</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Extra Curricular</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </nav>
 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Hello</b></h1>
+    <h4>Hope you are doing well. . .</h4>
+    <h4>Check out the cool stuff I have been doing all my life ;)</h4>
+    <h3 class="w3-text-grey"><b>My Projects</b></h3>
+    </div>
+  </header>
 
 
-<div class="container">
-  <div class="jumbotron">
-    <h2 align="center">Website</h2>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="wcol-sm-3 col-md-6 col-lg-4">
+      <div class="w3-container w3-white">
+        <p><b>Generic Web Forum</b></p>
+        <p>
+          - Developed an ingenious web forum wherein users could discuss about anything and everything that they like. This Forum is built with an intention to share, discuss and socialize with user's ideas and thoughts. All the ideas posted have a category and registered users could sort the posts depending upon their favorite category of posts. <br>
+          - Incorporated data analysis on the forum data by representing several charts showing the Admin about the current happenings in the forum and allowing him to take decisions on the registered users. <br>
+          - Refracted the code to improve data abstraction and reduce code dependencies.  <br>
+          - Diligently followed Agile Scrum Methodology on Taiga Board while developing this project with a sprint length of two weeks. <br>
+          - Managed to host the website on Google Cloud Platform. <br>
+          - Acted as Scrum Master for one of the sprints (Sprint 3). <br> <br>
 
-    <p class="text-justify blocktext"  width="300" height="240">
-        <img  id ="profilepic" src="images/IMG_0460.JPG" class="img-responsive img-circle margin" alt="Aneesh Dalvi Profile Pic" width="180" height="180" align="left" hspace="50 vspace="50" />
+          The website is currently live on http://ser515.meng-server.com:5000 <br>
 
-            Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.
-            Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web. Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web. Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web. Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web
+          Stages of our forum at every sprint are on YouTube at this channel - https://www.youtube.com/channel/UCwif_LFQGJqHl14Cts6MbCQ  <br> <br>
+
+          Major Technologies used - <br>
+          1. Python Flask Framework <br>
+          2. Google Cloud Platform  <br>
+          3. MySQL database  <br>
+          4. Taiga Scrum Software  <br>
+          Languages used: Python, SQL, HTML, CSS, JavaScript <br>
         </p>
+      </div>
     </div>
-<br>
-
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Cool things on the website</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin">Resources</h3><br>
-  <div class="row" >
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container-fluid bg-3 text-center">
     <br>
-  <div class="row" >
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <div class="w3-container w3-white">
+        <p><b>Building a Robot using Cypress PSoC</b></p>
+        <p>- Built a Robot from scratch using Cypress PSoC Micro Controller and programmed it with PSoC Creator Application to give facial expressions resulting into a storyline. <br>
+          - Designed and 3-D printed all the parts of the Robot. <br>
+          - Assembled all the parts together to make the facial expressive robot movable. <br>
+      </p>
+      </div>
     </div>
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
+     <br>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <div class="w3-container w3-white">
+        <p><b>Building a Robot using Cypress PSoC</b></p>
+        <p>- Built a Robot from scratch using Cypress PSoC Micro Controller and programmed it with PSoC Creator Application to give facial expressions resulting into a storyline. <br>
+          - Designed and 3-D printed all the parts of the Robot. <br>
+          - Assembled all the parts together to make the facial expressive robot movable. <br>
+      </p>
+      </div>
     </div>
-    <div class="col-sm-4">
-        <div class="container">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some example text. Some example text.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
-        </div>
+
+     <br>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <div class="w3-container w3-white">
+        <p><b>Building a Robot using Cypress PSoC</b></p>
+        <p>- Built a Robot from scratch using Cypress PSoC Micro Controller and programmed it with PSoC Creator Application to give facial expressions resulting into a storyline. <br>
+          - Designed and 3-D printed all the parts of the Robot. <br>
+          - Assembled all the parts together to make the facial expressive robot movable. <br>
+      </p>
+      </div>
+    </div>
+
+     <br>
+    <div class="col-sm-3 col-md-6 col-lg-4">
+      <div class="w3-container w3-white">
+        <p><b>Building a Robot using Cypress PSoC</b></p>
+        <p>- Built a Robot from scratch using Cypress PSoC Micro Controller and programmed it with PSoC Creator Application to give facial expressions resulting into a storyline. <br>
+          - Designed and 3-D printed all the parts of the Robot. <br>
+          - Assembled all the parts together to make the facial expressive robot movable. <br>
+      </p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
     </div>
   </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <hr>
+
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>Photography</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Web Design</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+
+    <h4>How much I charge</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">1GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">Unlimited Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>email@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Chicago, US</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+
+
+
+<!-- End page content -->
 </div>
 
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
 
-
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Want to know about me anywhere else too? Click on my name --> <a href="https://www.linkedin.com/in/aneeshdalvi/">Aneesh Dalvi</a></p>
-</footer>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
-
-
 </html>
